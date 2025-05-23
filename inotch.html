@@ -17,10 +17,44 @@
 .footer {
     color: #c8e6c9 !important; /* Light green text color */
 }
+@media (max-width: 767.98px) {
+  .contact-card,
+  .contact-form {
+    margin-bottom: 2rem;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  footer .row > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer .social-links {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer h4,
+  .footer h5 {
+    text-align: center;
+  }
+
+  .footer .text-center {
+    text-align: center !important;
+  }
+}
 
 .footer a {
     color: #a5d6a7 !important; /* Slightly darker green for links */
 }
+
 
 .footer h5 {
     color: #81c784 !important; /* Medium-light green for headings */
@@ -37,6 +71,25 @@
 .footer a:hover {
     color: #69f0ae !important; /* Bright light green for hover state */
     text-decoration: none;
+}
+@media (max-width: 575.98px) {
+  .carousel-item img {
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    font-size: 0.85rem;
+    padding-bottom: 1rem;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
 }
 
 .footer .social-links a {
@@ -274,6 +327,66 @@
     width: 70%;
     margin: 2rem auto;
 }
+@media (max-width: 575.98px) {
+  .carousel-item img {
+    height: 250px !important;
+    object-fit: cover;
+  }
+
+  .carousel-caption {
+    bottom: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    text-align: left;
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem !important;
+    color: #eee;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #services,
+  #courses,
+  #contact {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+
+  .contact-card,
+  .contact-form {
+    margin-bottom: 2rem;
+  }
+
+  footer .row > div {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer .social-links {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer h4,
+  .footer h5 {
+    text-align: center;
+  }
+
+  .footer .text-center {
+    text-align: center !important;
+  }
+}
 
 
 h3 {
@@ -492,8 +605,8 @@ aboutContent.forEach((item, index) => {
 });
 </script>
 
+<section id="services" class="py-5">
 
-  <section id="services" class="py-5" style="height: 100vh;">
     <div class="container">
         <h2 class="text-center mb-5 display-4 fw-bold">Our Expertise</h2>
         
@@ -544,8 +657,7 @@ servicesData.forEach(service => {
 });
 </script>
 
-
- <section id="courses" class="py-5" style="height: 100vh;">
+<section id="courses" class="py-5">
     <div class="container">
         <h2 class="text-center mb-5 display-4 fw-bold">Our Courses</h2>
         
@@ -592,8 +704,8 @@ coursesData.forEach(course => {
 });
 </script>
 
+<section id="contact" class="py-5" style="background: linear-gradient(135deg, #f0fff4 0%, #ffffff 100%);">
 
-  <section id="contact" class="py-5" style="height: 100vh; background: linear-gradient(135deg, #f0fff4 0%, #ffffff 100%);">
     <div class="container">
         <h2 class="text-center mb-5 display-4 fw-bold">Contact Us</h2>
         
